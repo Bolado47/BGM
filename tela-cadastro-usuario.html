@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BGMSYSTEM</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- adicionados para pg registro de chamadas -->
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/css/typicons.css" rel="stylesheet">
+    
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+
+    <!-- azia CSS -->
+    <link rel="stylesheet" href="assets/css/katniss.css">
+
+
+</head>
+
+<body>
+    <div><!-- navbar -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(33,74,128);">
+      <div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);">BGM System</a><button class="navbar-toggler" data-toggle="collapse" data-target  ="#navcol-1" style="color: rgb(255,255,255);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div
+        class="collapse navbar-collapse" id="navcol-1" style="color: rgb(255,255,255);">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item" role="presentation" style="color: rgb(255,255,255);"><a class="nav-link" href="tela-agenda.html" style="color: rgb(255,255,255);">Agenda</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgb(255,255,255);">Pacientes</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="tela-registro-de-chamada.html" style="color: rgb(255,255,255);">Registro de Chamada</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgb(255,255,255);">Financeiro</a></li>
+          <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);">Ajustes</a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" role="presentation" href="">Meu Perfil</a>
+              <a class="dropdown-item" role="presentation" href="tela-cadastro-usuario">Usuários do Sistema</a>
+              <a class="dropdown-item" role="presentation" href="#">sair</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div><!-- navbar -->
+
+
+<div class="container">
+<div class="kt-pagebody">
+
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <label class="content-left-label">Sua Foto de Perfil</label>
+            <figure class="edit-profile-photo">
+              <img src="assets/img/img1.jpg" class="img-fluid" alt="">
+              <figcaption>
+                <a href="" class="btn btn-dark">Editar Foto</a>
+              </figcaption>
+            </figure>
+
+            <label class="content-left-label mg-t-30">Tipo</label>
+            <div class="col-lg-12" style="padding: 0px;">
+                <select class="content form-control select2" data-placeholder="Choose Browser">
+                    <option value="medico">Médico</option>
+                    <option value="atendente">Atendente</option>
+                    <option value="adm">Administrador</option>
+                </select>
+            </div>
+            <div class="content">
+                <div class="form-layout">
+                  <button class="btn btn-success col-md-12">Novo</button>
+                  <button class="btn btn-default col-md-12">Salvar Informações</button>
+                  <button class="btn btn-secondary col-md-12">Cancelar</button>
+                </div>
+            </div>
+
+          </div><!-- col-3 -->
+          <div class="col-md-8 col-lg-9 mg-t-30 mg-md-t-0">
+            <label class="content-left-label">Informações de Login</label>
+            <div class="card bg-gray-200 bd-0">
+              <div class="edit-profile-form">
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Nome de Usuário: <span class="tx-danger">*</span></label>
+                  <div class="col-sm-8 col-xl-6 mg-t-10 mg-sm-t-0">
+                    <input class="form-control" placeholder="seu.nome" type="text" value="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Email: <span class="tx-danger">*</span></label>
+                  <div class="col-sm-8 col-xl-6 mg-t-10 mg-sm-t-0">
+                    <input class="form-control" placeholder="seu.email@seudominio.com" type="email" value="">
+                  </div>
+                </div>
+                <div class="form-group row mg-b-0">
+                  <label class="col-sm-3 form-control-label">Nova Senha:</label>
+                  <div class="col-sm-8 col-xl-6 mg-t-10 mg-sm-t-0">
+                    <input class="form-control" placeholder="********" type="password" value=""><a href="">Mudar Senha</a>
+                  </div>
+                </div>
+              </div><!-- wd-60p -->
+            </div><!-- card -->
+
+            <hr class="invisible">
+
+            <label class="content-left-label">Informações Profissionais</label>
+            <div class="card bg-gray-200 bd-0">
+              <div class="edit-profile-form">
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <input class="form-control" placeholder="Nome Completo" type="text" value="">
+                  </div>
+                </div><!-- form-group -->
+                
+                <div class="content">
+                    <div class="form-group row">
+                        <div class="col-md-4">
+                            <input class="form-control" placeholder="Conselho" type="text" value="">
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" placeholder="Uf do Conselho" type="text" value="">
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" placeholder="Nº do Registro" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <input class="form-control" placeholder="telefone" type="text" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" placeholder="email" type="email" value="">
+                        </div>
+                    </div>
+                </div><!-- form-group -->
+              </div><!-- wd-60p -->
+            </div><!-- card -->
+
+            <hr class="invisible">
+
+            <label class="content-left-label">Horários de Agendamento</label>
+            <div class="card pd-40 bg-gray-200 bd-0">
+              <div class="content" style="margin-bottom: 30px;">
+                <label class="ckbox">
+                  <input type="checkbox"><span>Aparecer na Agenda </span>
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>SEG </span><input type="time" id="time"> até <input type="time" id="time">
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>TER </span><input type="time" id="time"> até <input type="time" id="time">
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>QUA </span><input type="time" id="time"> até <input type="time" id="time">
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>QUI </span><input type="time" id="time"> até <input type="time" id="time">
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>SEX </span><input type="time" id="time"> até <input type="time" id="time">
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>SAB </span><input type="time" id="time"> até <input type="time" id="time">
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>DOM </span><input type="time" id="time"> até <input type="time" id="time">
+                </label>
+              </div>
+            </div><!-- card -->
+
+            <hr class="invisible">
+
+            <label class="content-left-label">Permissões</label>
+            <div class="card pd-40 bg-gray-200 bd-0">
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>Pacientes</span>
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>Agenda</span>
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>Financeiro</span>
+                </label>
+              </div>
+              <div>
+                <label class="ckbox">
+                  <input type="checkbox"><span>Registro de Chamada</span>
+                </label>
+              </div>
+            </div><!-- card -->
+
+          </div><!-- col-9 -->
+        </div><!-- row -->
+
+      </div>
+</div>
+
+    </body>
+
+    </html>
